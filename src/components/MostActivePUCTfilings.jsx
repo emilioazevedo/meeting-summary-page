@@ -8,7 +8,7 @@ import tag4Icon from '../assets/tag4.png';
 
 const MostActivePUCTFilings = () => {
   return (
-    <div className="p-3 border rounded mt-3">
+    <div className="p-3 border rounded mt-3" style={{ backgroundColor: 'white' }}>
       <div className="d-flex justify-content-between align-items-center mb-3">
       <img src={filingIcon} alt="Filing Icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
         <h6 className="mb-0">Most Active PUCT Filings</h6>

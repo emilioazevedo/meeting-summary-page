@@ -8,7 +8,7 @@ import news5 from '../assets/news 5.png';
 
 const LatestIndustryNews = () => {
   return (
-    <div className="p-3 border rounded">
+    <div className="p-3 border rounded , background-color: #f8f9fa" style={{ backgroundColor: '#ffffff' }}>
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div className="d-flex align-items-center">
           <img src={calendarIcon} alt="Calendar Icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />

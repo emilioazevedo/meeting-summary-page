@@ -20,9 +20,12 @@ const MeetingInfo = () => {
           src={gmAiIcon} 
           alt="Grid Monitor AI" 
           className="me-2" 
-          style={{ width: '40px', height: '40px' }} 
+          style={{ width: '50px', height: '50px' }} 
         />
-        <span className="text-muted">Grid Monitor AI Summary | Posted 10/25/2024</span>
+        <div>
+          <h4 className="mb-0">Grid Monitor AI Summary</h4>
+          <span className="text-muted">Posted 10/25/2024</span>
+        </div>
         <div className="ms-auto">
           <button className="btn btn-link btn-sm me-2">
             <i className="bi bi-cloud-download"></i>

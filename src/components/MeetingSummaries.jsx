@@ -5,7 +5,7 @@ import puctSealLogo from '../assets/puct-seal-logo.svg';
 
 const MeetingSummaries = () => {
   return (
-    <div className="p-3 border rounded mt-3">
+    <div className="p-3 border rounded mt-3" style={{ backgroundColor: 'white' }}>
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div className="d-flex align-items-center">
           <img src={calendarIcon} alt="Calendar Icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />

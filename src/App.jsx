@@ -17,7 +17,7 @@ import MeetingAgendaItems from './components/MeetingAgendaItems';
 
 const App = () => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0" style={{ backgroundColor: '#EEF2F3' }}>
       {/* Navbar - Keeping your existing styling */}
       <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#27508d' }}>
         <div className="container-fluid">
@@ -61,7 +61,7 @@ const App = () => {
           </div>
 
           {/* Main Content - Updated with new components */}
-          <div className="col-md-7 py-3">
+          <div className="col-md-7 py-3" style={{ paddingRight: '15px', backgroundColor: 'white' }}>
             <MeetingHeader />
             <MeetingVideo />
             <MeetingInfo />
@@ -71,7 +71,7 @@ const App = () => {
           </div>
 
           {/* Right Sidebar - Updated with new components */}
-          <div className="col-md-3 py-3">
+          <div className="col-md-3 py-3" style={{ paddingLeft: '15px' }}>
             <LatestIndustryNews />
             <MeetingSummaries />
             <MostActivePUCTFilings />
