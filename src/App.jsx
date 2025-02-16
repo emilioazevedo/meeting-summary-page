@@ -5,7 +5,7 @@ import RelatedControls from './components/RelatedControls';
 import RelatedMeetings from './components/RelatedMeetings';
 import { LatestIndustryNews } from './components/LatestNews';
 import MeetingSummaries from './components/MeetingSummaries';
-import MostActivePUCTFilings from './components/MostActivePUCTFilings'; // Ensure the file name matches
+import MostActivePUCTFilings from './components/mostActivePuctFilings'; // Ensure the file name matches
 import KeywordTags from './components/KeywordTags';
 import MeetingVideo from './components/MeetingVideo';
 import MeetingInfo from './components/MeetingInfo';
