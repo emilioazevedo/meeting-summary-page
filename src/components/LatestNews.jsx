@@ -6,7 +6,7 @@ import news3 from '../assets/news 3.png';
 import news4 from '../assets/news 4.png';
 import news5 from '../assets/news 5.png';
 
-const LatestIndustryNews = () => {
+const LatestNews = () => {
   return (
     <div className="p-3 border rounded" style={{ backgroundColor: '#ffffff' }}>
       <div className="d-flex justify-content-between align-items-center mb-3">
@@ -68,4 +68,4 @@ const LatestIndustryNews = () => {
   );
 };
 
-export { LatestIndustryNews };
+export { LatestNews };

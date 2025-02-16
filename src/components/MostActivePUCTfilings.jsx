@@ -6,7 +6,7 @@ import tag3Icon from '../assets/tag3.png';
 import tag4Icon from '../assets/tag4.png';
 
 
-const MostActivePUCTFilings = () => {
+const MostActivePuctFilings = () => {
   return (
     <div className="p-3 border rounded mt-3" style={{ backgroundColor: 'white' }}>
       <div className="d-flex justify-content-between align-items-center mb-3">
@@ -46,4 +46,4 @@ const MostActivePUCTFilings = () => {
   );
 };
 
-export default MostActivePUCTFilings;
+export default MostActivePuctFilings;

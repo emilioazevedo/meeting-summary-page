@@ -3,9 +3,9 @@ import React from 'react';
 import MeetingHeader from './components/MeetingHeader';
 import RelatedControls from './components/RelatedControls';
 import RelatedMeetings from './components/RelatedMeetings';
-import { LatestIndustryNews } from './components/LatestNews';
+import { LatestNews } from './components/LatestNews'; // Use named import
 import MeetingSummaries from './components/MeetingSummaries';
-import MostActivePUCTFilings from './components/mostActivePuctFilings'; // Ensure the file name matches
+import MostActivePuctFilings from './components/MostActivePuctFilings'; // Ensure the file name matches
 import KeywordTags from './components/KeywordTags';
 import MeetingVideo from './components/MeetingVideo';
 import MeetingInfo from './components/MeetingInfo';
@@ -68,9 +68,9 @@ const App = () => {
 
           {/* Right Sidebar */}
           <div className="col-md-3 py-3" style={{ paddingLeft: '15px' }}>
-            <LatestIndustryNews />
+            <LatestNews />
             <MeetingSummaries />
-            <MostActivePUCTFilings />
+            <MostActivePuctFilings />
             <KeywordTags />
           </div>
         </div>
