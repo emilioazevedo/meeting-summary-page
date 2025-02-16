@@ -52,7 +52,7 @@ const App = () => {
               <a href="/monitoring" className="list-group-item list-group-item-action">Filing Monitoring</a>
               <a href="/clips" className="list-group-item list-group-item-action">My Clips</a>
               <a href="/history" className="list-group-item list-group-item-action">My History</a>
-              <a href="/help" className="list-group-item list-group-item-action">Feedback/Help</a>
+              <a href="/help" className="list-group-item list-group-item-action">Feedback-Help</a>
             </div>
           </div>
 
