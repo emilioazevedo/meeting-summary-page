@@ -1,11 +1,13 @@
 import React from 'react';
+import pucSealLogo from '../assets/puc-seal-logo 1.png';
+import gmAiIcon from '../assets/GM AI.svg';
 
 const MeetingInfo = () => {
   return (
     <div className="mt-2 mb-4">
       <div className="d-flex flex-column align-items-center mb-2">
         <img 
-          src="src/assets/puc-seal-logo 1.png" 
+          src={pucSealLogo} 
           alt="PUC Seal Logo" 
           className="mb-2" 
           style={{ width: '48px', height: '48px' }} 
@@ -15,7 +17,7 @@ const MeetingInfo = () => {
       </div>
       <div className="d-flex align-items-center">
         <img 
-          src="src/assets/GM AI.svg" 
+          src={gmAiIcon} 
           alt="Grid Monitor AI" 
           className="me-2" 
           style={{ width: '40px', height: '40px' }} 

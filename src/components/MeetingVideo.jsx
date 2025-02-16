@@ -1,12 +1,13 @@
 // MeetingVideo.jsx
 import React from 'react';
+import videoPlayer from '../assets/VideoPlayer.png';
 
 const MeetingVideo = () => {
   return (
     <div className="position-relative mb-2"> {/* Reduced bottom margin */}
       <div className="ratio ratio-16x9">
         <img 
-          src="src/assets/VideoPlayer.png" 
+          src={videoPlayer} 
           alt="PUCT Meeting" 
           className="img-fluid border rounded"
           style={{ objectFit: 'cover' }}
