@@ -1,10 +1,10 @@
 import React from 'react';
 import calendarIcon from '../assets/calendar.png';
-import news1 from '../assets/news 1.png';
-import news2 from '../assets/news 2.png';
-import news3 from '../assets/news 3.png';
-import news4 from '../assets/news 4.png';
-import news5 from '../assets/news 5.png';
+import news1 from '../assets/news 1.png'; // Ensure the file name and path are correct
+import news2 from '../assets/news 2.png'; // Ensure the file name and path are correct
+import news3 from '../assets/news 3.png'; // Ensure the file name and path are correct
+import news4 from '../assets/news 4.png'; // Ensure the file name and path are correct
+import news5 from '../assets/news 5.png'; // Ensure the file name and path are correct
 
 const LatestNews = () => {
   return (
