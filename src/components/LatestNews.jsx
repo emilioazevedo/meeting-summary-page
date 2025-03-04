@@ -12,7 +12,7 @@ const LatestNews = () => {
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div className="d-flex align-items-center">
           <img src={calendarIcon} alt="Calendar Icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
-          <h6 className="mb-0">Latest Industry News</h6>
+          <h6 className="mb-0" style={{ color:'#093677'}}>Latest Industry News</h6>
         </div>
         <a href="#" className="text-decoration-none small" style={{ fontSize: '12px' }}>READ MORE</a>
       </div>

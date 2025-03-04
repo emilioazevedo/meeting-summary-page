@@ -1,25 +1,49 @@
 // MeetingVideo.jsx
-import React from 'react';
-import videoPlayer from '../assets/VideoPlayer.png';
+import React, { useRef } from 'react';
+import puctOpenMeetingVideo from '../assets/puct-open-meeting.mov'; // Import the video file
 
 const MeetingVideo = () => {
+  const videoRef = useRef(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error('Error playing video:', error);
+      });
+    }
+  };
+
+  const handlePause = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
+
+  const handleStop = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
-    <div className="position-relative mb-4" style={{ marginBottom: '50px' }}> {/* Added margin-bottom */}
+    <div id="meetingVideo" className="position-relative mb-4" style={{ marginBottom: '50px' }}>
       <div className="ratio ratio-16x9">
-        <img 
-          src={videoPlayer} 
-          alt="PUCT Meeting" 
-          className="img-fluid border rounded"
-          style={{ objectFit: 'cover' }}
-        />
-        <div className="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
-          <button className="btn btn-light btn-lg rounded-circle">
-            <i className="bi bi-play-fill fs-4"></i>
-          </button>
-        </div>
-        <div className="position-absolute bottom-0 end-0 p-2">
-        
-        </div>
+        <video ref={videoRef} className="img-fluid border rounded" style={{ objectFit: 'cover' }}>
+          <source src={puctOpenMeetingVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="d-flex justify-content-center align-items-center mt-3"> {/* Moved button container */}
+        <button onClick={handlePlay} className="btn btn-light btn-lg rounded-circle me-2">
+          <i className="bi bi-play-fill fs-4"></i>
+        </button>
+        <button onClick={handlePause} className="btn btn-light btn-lg rounded-circle me-2">
+          <i className="bi bi-pause-fill fs-4"></i>
+        </button>
+        <button onClick={handleStop} className="btn btn-light btn-lg rounded-circle">
+          <i className="bi bi-stop-fill fs-4"></i>
+        </button>
       </div>
     </div>
   );

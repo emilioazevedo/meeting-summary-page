@@ -23,6 +23,13 @@ const MeetingAgendaItems = () => {
     { number: 18, title: "Commission Staff - Online Outage Map, 56897", content:  "Scott Miller is a board member of Windermere Oaks Water Supply Corporation, member since 2016. Discussed concerns about financial challenges due to PUC’s mandated rates. No chance for a rate increase for twelve months, leading towards potential insolvency in two months. PUC’s ordered rates result in a minimum loss of $10,000 per month. Expenses increased due to aging infrastructure, reaching an additional $20,000 to $45,000 monthly. Board prioritized maintaining water service over compliance docket due to resource constraints. Lack of funding provided to meet compliance requirements imposed by PUC. Communicated financial incapacity to PUC since May without receiving a response." }
   ];
 
+  const scrollToVideo = () => {
+    const videoElement = document.getElementById('meetingVideo');
+    if (videoElement) {
+      videoElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="accordion mb-5 mt-4" id="agendaAccordion" style={{ maxHeight: '500px', overflowY: 'auto' }}>
       {agendaItems.map((item) => (
@@ -47,7 +54,7 @@ const MeetingAgendaItems = () => {
           >
             <div className="accordion-body">
               <div className="d-flex align-items-center gap-2 mb-2">
-                <button className="btn btn-outline-secondary btn-sm">
+                <button className="btn btn-outline-secondary btn-sm" onClick={scrollToVideo}>
                   <i className="bi bi-play-fill"></i> Play Clip
                 </button>
                 <button className="btn btn-link btn-sm text-muted">

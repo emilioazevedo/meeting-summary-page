@@ -3,7 +3,7 @@ import pucSealLogo from '../assets/puc-seal-logo 1.png';
 
 const MeetingInfo = () => {
   return (
-    <div className="mt-2 mb-4">
+    <div className="mt-2 mb-4 d-flex justify-content-between align-items-center">
       <div className="d-flex align-items-center mb-2">
         <div className="d-flex flex-column align-items-center me-2">
           <img 
@@ -19,6 +19,11 @@ const MeetingInfo = () => {
             <p className="text-muted mb-0" style={{ fontSize: '16px' }}>October 24, 2024</p>
           </div>
         </div>
+      </div>
+      <div>
+        <button className="btn btn-primary btn-sm" style={{ backgroundColor: '#194f90' }}>
+          Go to Meeting
+        </button>
       </div>
     </div>
   );
