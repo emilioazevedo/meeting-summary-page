@@ -5,14 +5,11 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "build" // Ensure this matches your build output directory
       }
     }
   ],
   "routes": [
-    { "src": "/(.*\\.js)", "headers": { "Content-Type": "text/javascript" } },
-    { "src": "/(.*\\.css)", "headers": { "Content-Type": "text/css" } },
-    { "src": "/(.*\\.(png|jpg|jpeg|gif|svg|webp|ico))", "headers": { "Cache-Control": "max-age=31536000" } },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
