@@ -38,7 +38,7 @@ const App = () => {
 
         <div style={{ display: 'flex', width: '100%', backgroundColor: '#EEF2F3' }}>
           {/* Left Sidebar */}
-          <div style={{ width: '16.66%', backgroundColor: '#f8f9fa', borderRight: '1px solid #dee2e6' }}>
+          <div style={{ width: '16.66%', backgroundColor: '#f8f9fa', borderRight: '1px solid #dee2e6', paddingRight: '1rem' }}>
             <div className="list-group list-group-flush">
               <a href="/" className="list-group-item list-group-item-action">Dashboard</a>
               <a href="/meetings" className="list-group-item list-group-item-action">Meetings</a>
@@ -55,7 +55,7 @@ const App = () => {
           </div>
 
           {/* Main Content */}
-          <div style={{ width: '58.33%', backgroundColor: 'white', padding: '1rem' }}>
+          <div style={{ width: '58.33%', backgroundColor: 'white', padding: '1rem', marginLeft: '1rem', marginTop: '1rem' }}>
             <Routes>
               <Route path="/latest-news" element={<LatestNews />} />
               <Route path="/meeting-agenda" element={<MeetingAgendaItems />} />
