@@ -18,7 +18,7 @@ const LatestNews = () => {
       </div>
       <hr style={{ borderColor: '#194F90', borderWidth: '3px' }} /> {/* Updated blue color */}
       <div className="d-flex flex-column gap-3">
-        <div className="news-item card shadow-sm" style={{ borderLeft: '2px solid #d8aa0b', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="news-item card shadow-sm" style={{ borderLeft: '2.5px solid #d8aa0b', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">
             <img src={news1} alt="news" style={{ width: '100px', height: '60px' }} />
             <div>
@@ -27,7 +27,7 @@ const LatestNews = () => {
             </div>
           </div>
         </div>
-        <div className="news-item card shadow-sm" style={{ borderLeft: '2px solid #194F90', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="news-item card shadow-sm" style={{ borderLeft: '3px solid #194F90', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">
             <img src={news2} alt="news" style={{ width: '100px', height: '60px' }} />
             <div>
@@ -36,7 +36,7 @@ const LatestNews = () => {
             </div>
           </div>
         </div>
-        <div className="news-item card shadow-sm" style={{ borderLeft: '2px solid #86c1a3', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="news-item card shadow-sm" style={{ borderLeft: '2.5px solid #86c1a3', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">
             <img src={news3} alt="news" style={{ width: '100px', height: '60px' }} />
             <div>
@@ -45,7 +45,7 @@ const LatestNews = () => {
             </div>
           </div>
         </div>
-        <div className="news-item card shadow-sm" style={{ borderLeft: '2px solid #194e30', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="news-item card shadow-sm" style={{ borderLeft: '2.5px solid #194e30', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">
             <img src={news4} alt="news" style={{ width: '100px', height: '60px' }} />
             <div>
@@ -54,7 +54,7 @@ const LatestNews = () => {
             </div>
           </div>
         </div>
-        <div className="news-item card shadow-sm" style={{ borderLeft: '2px solid #ad48b1', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="news-item card shadow-sm" style={{ borderLeft: '2.5px solid #ad48b1', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">
             <img src={news5} alt="news" style={{ width: '100px', height: '60px' }} />
             <div>

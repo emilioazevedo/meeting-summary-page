@@ -11,6 +11,7 @@ import KeywordTags from './components/KeywordTags';
 import MeetingVideo from './components/MeetingVideo';
 import MeetingInfo from './components/MeetingInfo';
 import MeetingAgendaItems from './components/MeetingAgendaItems';
+import GridMonitorAISummary from './components/GridMonitorAISummary';
 
 const App = () => {
   return (
@@ -61,8 +62,9 @@ const App = () => {
               <Route path="/most-active-puct-filings" element={<MostActivePuctFilings />} />
             </Routes>
             <MeetingHeader />
-            <MeetingVideo />
             <MeetingInfo />
+            <MeetingVideo />
+            <GridMonitorAISummary />
             <MeetingAgendaItems />
             <RelatedControls />
             <RelatedMeetings />

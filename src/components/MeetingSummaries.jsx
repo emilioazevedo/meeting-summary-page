@@ -15,7 +15,7 @@ const MeetingSummaries = () => {
       </div>
       <hr style={{ borderColor: '#194F90', borderWidth: '3px' }} /> {/* Updated blue color */}
       <div className="d-flex flex-column gap-2">
-        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2px solid orange', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={ercotIcon} alt="Ercot" style={{ width: '30px', height: '30px' }} />
             <div>
@@ -24,7 +24,7 @@ const MeetingSummaries = () => {
             </div>
           </div>
         </div>
-        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2px solid orange', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={puctSealLogo} alt="PUCT" style={{ width: '30px', height: '30px' }} />
             <div>
@@ -33,7 +33,7 @@ const MeetingSummaries = () => {
             </div>
           </div>
         </div>
-        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2px solid orange', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={ercotIcon} alt="ERCOT" style={{ width: '30px', height: '30px' }} />
             <div>
@@ -42,7 +42,7 @@ const MeetingSummaries = () => {
             </div>
           </div>
         </div>
-        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2px solid orange', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={puctSealLogo} alt="PUC Seal Logo" style={{ width: '30px', height: '30px' }} />
             <div>
@@ -51,7 +51,7 @@ const MeetingSummaries = () => {
             </div>
           </div>
         </div>
-        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2px solid orange', borderRadius: '0', borderWidth: '1px' }}>
+        <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={ercotIcon} alt="ERCOT" style={{ width: '30px', height: '30px' }} />
             <div>

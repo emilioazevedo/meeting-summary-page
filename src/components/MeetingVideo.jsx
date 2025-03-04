@@ -4,7 +4,7 @@ import videoPlayer from '../assets/VideoPlayer.png';
 
 const MeetingVideo = () => {
   return (
-    <div className="position-relative mb-2"> {/* Reduced bottom margin */}
+    <div className="position-relative mb-4" style={{ marginBottom: '50px' }}> {/* Added margin-bottom */}
       <div className="ratio ratio-16x9">
         <img 
           src={videoPlayer} 

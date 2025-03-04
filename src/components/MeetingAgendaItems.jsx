@@ -24,7 +24,7 @@ const MeetingAgendaItems = () => {
   ];
 
   return (
-    <div className="accordion mb-4" id="agendaAccordion" style={{ maxHeight: '500px', overflowY: 'auto' }}>
+    <div className="accordion mb-5 mt-4" id="agendaAccordion" style={{ maxHeight: '500px', overflowY: 'auto' }}>
       {agendaItems.map((item) => (
         <div key={item.number} className="accordion-item">
           <h2 className="accordion-header" id={`heading${item.number}`}>
