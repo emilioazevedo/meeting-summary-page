@@ -13,7 +13,7 @@ const MeetingSummaries = () => {
         </div>
         <a href="#" className="text-decoration-none small" style={{ fontSize: '12px' }}>READ MORE</a>
       </div>
-      <hr style={{ borderColor: '#194F90', borderWidth: '3px' }} /> {/* Updated blue color */}
+      <hr style={{ borderColor: '#194F90', borderWidth: '2px' }} /> {/* Updated blue color */}
       <div className="d-flex flex-column gap-2">
         <div className="meeting-item card shadow-sm" style={{ borderLeft: '2.5px solid orange', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex align-items-center gap-2 card-body">

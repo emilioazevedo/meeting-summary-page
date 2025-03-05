@@ -16,7 +16,7 @@ const LatestNews = () => {
         </div>
         <a href="#" className="text-decoration-none small" style={{ fontSize: '12px' }}>READ MORE</a>
       </div>
-      <hr style={{ borderColor: '#194F90', borderWidth: '3px' }} /> {/* Updated blue color */}
+      <hr style={{ borderColor: '#194F90', borderWidth: '2px' }} /> {/* Updated blue color */}
       <div className="d-flex flex-column gap-3">
         <div className="news-item card shadow-sm" style={{ borderLeft: '2.5px solid #d8aa0b', borderRadius: '0', borderWidth: '1px' }}>
           <div className="d-flex gap-2 card-body align-items-start">

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95a172ff.css",
+    "main.js": "/static/js/main.294162cf.js",
+    "static/media/puct-open-meeting.mov": "/static/media/puct-open-meeting.364358d84924f884fbb8.mov",
+    "static/media/puct-seal-logo.svg": "/static/media/puct-seal-logo.f32da7c1a806bc0694153861f867efa2.svg",
+    "static/media/GM AI.svg": "/static/media/GM AI.388ace6afe09a2649574c81b6ee8a77d.svg",
+    "static/media/ercot-icon-16.png": "/static/media/ercot-icon-16.0d2c05a6b6af29b68f37.png",
+    "index.html": "/index.html",
+    "main.95a172ff.css.map": "/static/css/main.95a172ff.css.map",
+    "main.294162cf.js.map": "/static/js/main.294162cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95a172ff.css",
+    "static/js/main.294162cf.js"
+  ]
+}

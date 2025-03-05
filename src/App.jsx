@@ -6,14 +6,28 @@ import RelatedControls from './components/RelatedControls';
 import RelatedMeetings from './components/RelatedMeetings';
 import { LatestNews } from './components/LatestNews';
 import MeetingSummaries from './components/MeetingSummaries';
-import MostActivePuctFilings from './components/MostActivePuctFilings';
+import MostActivePuctFilings from './components/MostActivePUCTfilings';
 import KeywordTags from './components/KeywordTags';
 import MeetingVideo from './components/MeetingVideo';
 import MeetingInfo from './components/MeetingInfo';
 import MeetingAgendaItems from './components/MeetingAgendaItems';
 import GridMonitorAISummary from './components/GridMonitorAISummary';
 
+const HomePage = () => (
+  <>
+    <MeetingHeader />
+    <MeetingInfo />
+    <MeetingVideo />
+    <GridMonitorAISummary />
+    <MeetingAgendaItems />
+    <RelatedControls />
+    <RelatedMeetings />
+  </>
+);
+
 const App = () => {
+  console.log('App component rendered'); // Debugging log
+
   return (
     <Router>
       <div style={{ width: '100vw', minHeight: '100vh' }}>
@@ -57,17 +71,11 @@ const App = () => {
           {/* Main Content */}
           <div style={{ width: '58.33%', backgroundColor: 'white', padding: '1rem', marginLeft: '1rem', marginTop: '1rem' }}>
             <Routes>
+              <Route path="/" element={<HomePage />} />
               <Route path="/latest-news" element={<LatestNews />} />
               <Route path="/meeting-agenda" element={<MeetingAgendaItems />} />
               <Route path="/most-active-puct-filings" element={<MostActivePuctFilings />} />
             </Routes>
-            <MeetingHeader />
-            <MeetingInfo />
-            <MeetingVideo />
-            <GridMonitorAISummary />
-            <MeetingAgendaItems />
-            <RelatedControls />
-            <RelatedMeetings />
           </div>
 
           {/* Right Sidebar */}

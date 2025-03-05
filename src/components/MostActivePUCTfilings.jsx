@@ -17,7 +17,7 @@ const MostActivePuctFilings = () => {
         <h6 className="mb-0" style={{ color:'#093677' }}>Most Active PUCT Filings</h6>
         <a href="#" className="text-decoration-none small" style={{ fontSize: '12px' }}>SEE ALL</a>
       </div>
-      <hr style={{ borderColor: '#194F90', borderWidth: '3px' }} /> {/* Updated blue color */}
+      <hr style={{ borderColor: '#194F90', borderWidth: '2px' }} /> {/* Updated blue color */}
       
       {/* Removed Play clip button */}
 
