@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Add import for Link
 import calendarIcon from '../assets/calendar.png';
 import ercotIcon from '../assets/ercot-icon-16.png';
 import puctSealLogo from '../assets/puct-seal-logo.svg';
@@ -9,7 +10,7 @@ const MeetingSummaries = () => {
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div className="d-flex align-items-center">
           <img src={calendarIcon} alt="Calendar Icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
-          <h6 className="mb-0"style={{ color:'#093677'}}>Meeting Summaries</h6>
+          <h6 className="mb-0" style={{ color:'#093677'}}>Meeting Summaries</h6>
         </div>
         <a href="#" className="text-decoration-none small" style={{ fontSize: '12px' }}>READ MORE</a>
       </div>
@@ -28,7 +29,7 @@ const MeetingSummaries = () => {
           <div className="d-flex align-items-center gap-2 card-body">
             <img src={puctSealLogo} alt="PUCT" style={{ width: '30px', height: '30px' }} />
             <div>
-              <p className="mb-0 small">PUCT Open Meeting - WebEx Only</p>
+              <Link to="/" className="mb-0 small text-decoration-none">PUCT Open Meeting - WebEx Only</Link> {/* Add link to homepage */}
               <small className="text-muted">02/25/2024</small>
             </div>
           </div>

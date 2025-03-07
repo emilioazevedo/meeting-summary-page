@@ -1,7 +1,7 @@
 import React from 'react';
 import gmAiIcon from '../assets/GM AI.svg';
 
-const GridMonitorAISummary = ({ onShowSupportingDocs, onShowNews }) => {
+const GridMonitorAISummary = () => {
   return (
     <div className="d-flex align-items-center">
       <img 
@@ -12,12 +12,8 @@ const GridMonitorAISummary = ({ onShowSupportingDocs, onShowNews }) => {
       />
       <div>
         <h4 className="mb-0" style={{ color: '#194f90', fontSize: '20px'}}>Grid Monitor AI Summary</h4>
-        <span className="text-muted" style={{fontSize: '12px'}}>Posted 02/05/2024</span>
       </div>
       <div className="ms-auto">
-        <button className="btn btn-link btn-sm me-2" onClick={onShowSupportingDocs}>
-          Supporting Docs
-        </button>
         <button className="btn btn-link btn-sm me-2">
           <i className="bi bi-cloud-download"></i>
         </button>
@@ -28,6 +24,14 @@ const GridMonitorAISummary = ({ onShowSupportingDocs, onShowNews }) => {
           <i className="bi bi-three-dots-vertical"></i>
         </button>
       </div>
+    </div>
+  );
+};
+
+const ArticleGMSummaryHeader = () => {
+  return (
+    <div className="article-gm-summary-header">
+      <h2>Grid Monitor AI Summary</h2>
     </div>
   );
 };

@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import MeetingHeader from './components/MeetingHeader';
 import RelatedControls from './components/RelatedControls';
 import RelatedMeetings from './components/RelatedMeetings';
-import { LatestNews } from './components/LatestNews';
 import MeetingSummaries from './components/MeetingSummaries';
 import MostActivePuctFilings from './components/MostActivePUCTfilings';
 import KeywordTags from './components/KeywordTags';
@@ -12,24 +11,46 @@ import MeetingVideo from './components/MeetingVideo';
 import MeetingInfo from './components/MeetingInfo';
 import MeetingAgendaItems from './components/MeetingAgendaItems';
 import GridMonitorAISummary from './components/GridMonitorAISummary';
+import SecondPage from './components/SecondPage';
+import Article from './components/Article';
+import MeetingSummaryPage from './components/MeetingSummaryPage';
+import SupportingDocs from './components/SupportingDocs';
+import { LatestNews } from './components/LatestNews'; // Re-add import
 
-const HomePage = () => (
-  <>
-    <MeetingHeader />
-    <MeetingInfo />
-    <MeetingVideo />
-    <GridMonitorAISummary />
-    <MeetingAgendaItems />
-    <RelatedControls />
-    <RelatedMeetings />
-  </>
-);
+const HomePage = () => {
+  const [showSupportingDocs, setShowSupportingDocs] = useState(false);
+
+  const handleShowSupportingDocs = () => {
+    console.log('Showing Supporting Docs');
+    setShowSupportingDocs(true);
+  };
+
+  const handleClose = () => {
+    console.log('Closing Supporting Docs');
+    setShowSupportingDocs(false);
+  };
+
+  return (
+    <>
+      <MeetingHeader />
+      <MeetingInfo />
+      <MeetingVideo />
+      <GridMonitorAISummary onShowSupportingDocs={handleShowSupportingDocs} />
+      {showSupportingDocs && (
+        <SupportingDocs onClose={handleClose} />
+      )}
+      <MeetingAgendaItems />
+      <RelatedControls />
+      <RelatedMeetings />
+    </>
+  );
+};
 
 const App = () => {
   console.log('App component rendered'); // Debugging log
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div style={{ width: '100vw', minHeight: '100vh' }}>
         {/* Navbar */}
         <nav style={{ backgroundColor: '#27508d', width: '100%' }}>
@@ -75,12 +96,15 @@ const App = () => {
               <Route path="/latest-news" element={<LatestNews />} />
               <Route path="/meeting-agenda" element={<MeetingAgendaItems />} />
               <Route path="/most-active-puct-filings" element={<MostActivePuctFilings />} />
+              <Route path="/second-page" element={<SecondPage />} /> {/* Add route for the second page */}
+              <Route path="/article" element={<Article />} /> {/* Add route for the Article page */}
+              <Route path="/meeting-summary" element={<MeetingSummaryPage />} /> {/* Add route for the Meeting Summary page */}
             </Routes>
           </div>
 
           {/* Right Sidebar */}
           <div style={{ width: '25%', padding: '1rem', backgroundColor: '#EEF2F3' }}>
-            <LatestNews />
+            <LatestNews /> {/* Re-add LatestNews */}
             <MeetingSummaries />
             <MostActivePuctFilings />
             <KeywordTags />
